@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ddd9d9"
+              android:padding="16dp">
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问答社区"
+        android:textSize="19sp"
+        android:textColor="#595757"/>
+
+    <TextView
+        android:id="@+id/my_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的帖子"
+        android:padding="5dp"
+        android:textColor="#702b89"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ecebeb"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="2dp"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="3dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/posts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/create_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:scaleType="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        app:borderWidth="0dp"
+        android:backgroundTint="#4775be"
+        app:elevation="4dp"
+        app:pressedTranslationZ="16dp"/>
+</RelativeLayout>

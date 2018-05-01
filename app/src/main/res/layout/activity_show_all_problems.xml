@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pblsystem.Activity.ShowAllProblems">
+
+   <TextView
+       android:id="@+id/label"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="所有课题"
+       android:textSize="18sp"
+       android:layout_marginTop="5dp"/>
+
+   <TextView
+       android:id="@+id/select_problem"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="去课题库看看？"
+       android:textColor="#314192"
+       android:layout_alignParentRight="true"
+       android:layout_marginTop="5dp"/>
+
+   <View
+       android:id="@+id/divider"
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="#dbd9d9"
+       android:layout_below="@+id/label"
+       android:layout_marginTop="5dp" />
+
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:id="@+id/refresh_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/divider">
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/all_problems_recycle_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="5dp">
+      </android.support.v7.widget.RecyclerView>
+   </android.support.v4.widget.SwipeRefreshLayout>
+
+   <android.support.design.widget.FloatingActionButton
+       android:id="@+id/create_problem"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/add"
+       android:scaleType="center"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginLeft="16dp"
+       android:layout_marginBottom="16dp"
+       app:borderWidth="0dp"
+       android:backgroundTint="#4775be"
+       app:elevation="4dp"
+       app:pressedTranslationZ="16dp"/>
+
+</RelativeLayout>

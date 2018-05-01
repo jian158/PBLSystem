@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ddd9d9">
+    <LinearLayout
+        android:id="@+id/my_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp">
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sppech_history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_class_blue_700_24dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/my_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的课堂"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/my_class_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/history"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/speech_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="演讲历史"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/clean_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/history"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:paddingLeft="10dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/clean"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="演讲历史"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:paddingLeft="20dp"/>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/exit_system_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注销登陆"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

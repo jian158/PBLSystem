@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pblsystem">
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 基础模块 END -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.MainActivityForStudent" />
+        <activity
+            android:name=".DialogActivity.StuCreateDialog"
+            android:theme="@style/CreateGroupDialog" />
+        <activity
+            android:name=".DialogActivity.PassWrodInput"
+            android:theme="@style/CreateGroupDialog" />
+        <activity
+            android:name=".DialogActivity.DialogApplyGroup"
+            android:theme="@style/CreateGroupDialog" />
+        <activity android:name=".Activity.ApplyGroup" />
+        <activity android:name=".Activity.MyGroupActivity" />
+        <activity android:name=".Activity.SetMyGroupInfo" />
+        <activity android:name=".Activity.CreateNewProblem" />
+        <activity android:name=".Activity.MainActivityForTeacher" />
+        <activity android:name=".Activity.CreateClass" />
+        <activity android:name=".Activity.ChooseClassOfOthers" />
+        <activity android:name=".Activity.ShowAllProblems" />
+        <activity android:name=".Activity.ProblemInfo" />
+        <activity android:name=".Activity.ApplyProblem" />
+        <activity android:name=".Activity.ShowApplyInfoDetail" />
+        <activity android:name=".Activity.ShowGroupInfo" />
+        <activity android:name=".Activity.MySpeech" />
+        <activity android:name=".Activity.MyApplyProblemRecord" />
+        <activity android:name=".Activity.MyProblemInfo" />
+        <activity android:name=".Activity.SetMySpeechProgress" />
+        <activity android:name=".Activity.SubmitMyWork" />
+        <activity android:name=".Activity.Evalution" />
+        <activity android:name=".Activity.HistorySpeech" />
+        <activity android:name=".Activity.MyScore" />
+        <activity android:name=".Activity.MyClassRoomInfo" />
+        <activity android:name=".Activity.MyInfo" />
+        <activity android:name=".Activity.InputPhoneNumber" />
+        <activity android:name=".Activity.ModifyPassword" />
+        <activity android:name=".Activity.InputPasswordSecurity" />
+        <activity android:name=".Activity.AutoLogin" />
+        <activity android:name=".Activity.ProblemAndGroup" />
+        <activity android:name=".Activity.ProblemAndGroupDetail" />
+        <activity android:name=".Activity.SetProblemInfo" />
+        <activity android:name=".Activity.MyClasses" />
+        <activity android:name=".Activity.InputClassName" />
+        <activity android:name=".Activity.SetEvalution" />
+        <activity android:name=".Activity.CreateEvalutionItem" />
+        <activity android:name=".Activity.ForgetPassword" />
+        <activity android:name=".Activity.InputNewPassword" />
+        <activity android:name=".Activity.NewTeacher" />
+        <activity android:name=".Activity.ShowAllExitGroupApplys" />
+        <activity android:name=".Activity.ShowLibrarayProblems" />
+        <activity android:name=".Activity.ShowLibraryProblemInfo" />
+
+        <service
+            android:name=".Service.NotifyApplysOfProblem"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name="com.avos.avoscloud.PushService" />
+
+        <!-- app关闭也能接收通知 -->
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity.ApplyTeacherRegister" />
+        <activity android:name=".Activity.MainActivityForAdmin" />
+        <activity android:name=".Activity.ShowAllEvalutions" />
+        <activity android:name=".Activity.EvalutionScoreDetail" />
+        <activity android:name=".Activity.CreatePost" />
+        <activity android:name=".Activity.Replies" />
+        <activity android:name=".Activity.MyPosts" />
+        <activity android:name=".Activity.SpeechInteraction" />
+        <activity android:name=".Activity.CleanActivity" />
+        <activity android:name=".Activity.ManagerDataBase" />
+        <activity android:name=".Activity.ModifyClass" />
+    </application>
+
+</manifest>

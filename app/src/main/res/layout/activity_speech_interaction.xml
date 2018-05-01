@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_speech_interaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context="com.example.pblsystem.Activity.SpeechInteraction"
+    android:background="#e8e5e5">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="精彩评论"
+        android:textSize="14sp"
+        android:textColor="#434242"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="5dp"
+        android:background="#a7a2a2"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:layout_above="@+id/submit_comment_layout"
+        android:layout_marginTop="5dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/submit_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#fbfbfb">
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="写评论"/>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textSize="17sp"
+            android:layout_marginRight="6dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

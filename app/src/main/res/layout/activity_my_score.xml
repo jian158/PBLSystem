@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pblsystem.Activity.MyScore">
+    <TextView
+        android:id="@+id/final_score"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="0"
+        android:textSize="16sp"
+        android:textColor="#d0cdcd"
+        android:gravity="center"
+        android:background="@drawable/oval_final_score"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="最终分数"
+        android:textColor="#6d6c6c"
+        android:gravity="center"
+        android:layout_below="@+id/final_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/minScore"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="0"
+        android:textSize="16sp"
+        android:textColor="#e2dfdf"
+        android:gravity="center"
+        android:background="@drawable/oval_min_score"
+        android:layout_below="@+id/final_score"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="最低分"
+
+        android:textColor="#6d6c6c"
+        android:gravity="center"
+        android:layout_below="@+id/minScore"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/maxScore"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="0"
+        android:textSize="16sp"
+        android:textColor="#4a4848"
+        android:gravity="center"
+        android:background="@drawable/oval_max_score"
+        android:layout_below="@+id/final_score"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/lable"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="最高分"
+        android:textColor="#6d6c6c"
+        android:gravity="center"
+        android:layout_below="@+id/maxScore"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/first_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cac6c6"
+        android:layout_below="@+id/lable"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示:"
+        android:textColor="#4eb950"
+        android:layout_below="@+id/first_divider"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/prompt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_divider"
+        android:text="共有0 人参与评价"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/prompt"/>
+
+
+    <TextView
+        android:id="@+id/see_all_evalutions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="#e26a18a5"
+        android:text="查看详细得分"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

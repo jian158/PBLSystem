@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/student_ui_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:showDividers="middle|end"
+        android:background="#ffffff"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#959595"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="3dp"
+        android:background="#ffffff" >
+        <TextView
+            android:id="@+id/student_ui_speech_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/speech_bright"
+            android:drawablePadding="4dp"
+            android:text="  课题  "
+            android:textColor="#27bdef"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/student_ui_group_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="  小组  "
+            android:drawableTop="@drawable/group_gray"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textColor="#767676"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/student_ui_find_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/find_gray"
+            android:drawablePadding="4dp"
+            android:text="  发现  "
+            android:textColor="#767676"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/student_ui_me_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/my_gray"
+            android:text="  我  "
+            android:gravity="center"
+            android:textColor="#767676"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

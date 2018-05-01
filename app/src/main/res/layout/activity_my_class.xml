@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_class"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pblsystem.Activity.MyClassRoomInfo">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="我的课堂"
+        android:textSize="15sp"
+        android:textColor="#e4e0e0"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/oval_button"/>
+    <TextView
+        android:id="@+id/class_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="课堂名："
+        android:textColor="#6e6d6d"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/class_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="#8a39a5"/>
+    <TextView
+        android:id="@+id/first_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebe6e6"
+        android:layout_below="@+id/class_name"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/teacher_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课堂老师:"
+        android:textSize="16sp"
+        android:textColor="#6e6d6d"
+        android:layout_below="@+id/first_divider"
+        android:layout_marginTop="20dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/class_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacher_label"
+        android:layout_marginTop="5dp"
+        android:background="#ddd9d9">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+
+        android:id="@+id/join_class"
+        android:text="切换课堂"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</RelativeLayout>

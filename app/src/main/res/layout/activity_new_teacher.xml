@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#ddd9d9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="账号和密码"
+            android:textSize="17sp"
+            android:layout_marginTop="0dp"
+            android:textColor="#2d34a1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d0cece"
+            android:layout_marginTop="5dp"/>
+        <FrameLayout
+            android:id="@+id/username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="#fefcfc"
+                android:textColor="#5f1a7a"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="60dp"
+                android:hint="账号"
+                android:textColorHint="#666667"
+                android:textSize="16sp"
+                android:paddingLeft="55dp" >
+            </EditText>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/account"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="#fefcfc"
+                android:textColor="#5f1a7a"
+                android:hint="姓名"
+                android:inputType="text"
+                android:textColorHint="#666667"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="55dp" >
+            </EditText>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/userclass"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/register_password_first"
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="#fefcfc"
+                android:textColor="#5f1a7a"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:textColorHint="#666667"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="55dp" >
+            </EditText>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/password"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/password_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/register_password_second"
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="#fefcfc"
+                android:textColor="#5f1a7a"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:textColorHint="#666667"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="55dp" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/password"
+                android:visibility="visible"
+                />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="这里填写申请说明"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示：教师用户注册需要向管理员提交注册申请，填写申请说明将有助于管理员辨别你的身份"
+            android:textColor="#334f96"
+            android:textSize="15sp"/>
+
+
+
+        <Button
+            android:id="@+id/register_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button"
+            android:text="提交"
+            android:textSize="20sp"
+            android:textColor="#f1f0f0"
+            />
+
+    </LinearLayout>
+</ScrollView>

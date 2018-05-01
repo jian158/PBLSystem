@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="今日演讲"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16sp"/>
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_speech_view_pager"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/slide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/fragment_all_speech_text_view"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_view"
+            android:gravity="center"
+            android:text="所有课题"
+            android:drawableTop="@drawable/all"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/fragment_my_speech_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:background="@drawable/text_view"
+            android:text="课题归属"
+            android:drawableTop="@drawable/all"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/fragment_speech_apply_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/text_view"
+                android:gravity="center"
+                android:text="申请处理"
+                android:drawableTop="@drawable/apply"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/red_oval"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/red_oval"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_submit_my_work"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pblsystem.Activity.SubmitMyWork">
+
+    <RelativeLayout
+        android:id="@+id/prompt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示:你已经提交过成员分工，再次提交将会覆盖原数据"
+            android:textSize="14sp"
+            android:textColor="#ae2b38" />
+
+        <View
+            android:id="@+id/first_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b7b7b7"
+            android:layout_below="@+id/prompt"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/contribution_ratio_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="贡献比重:"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#2e2e31"
+        android:layout_below="@+id/prompt_layout" />
+
+    <TextView
+        android:id="@+id/contribution_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/contribution_ratio_label"
+        android:layout_below="@+id/prompt_layout"
+        android:textSize="20sp"
+        android:text="0%"
+        android:textColor="#261f80"/>
+
+    <SeekBar
+        android:id="@+id/seek_proportion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/contribution_ratio_label"
+        />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小贴士：贡献比重反映了你对本课题的贡献程度。如果成员A，B的贡献比重分别为1和2，那么他们的贡献比为1:2"
+        android:layout_below="@+id/seek_proportion"/>
+
+    <View
+        android:id="@+id/second_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbd8d8"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tips"/>
+    <TextView
+        android:id="@+id/briefDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的主要工作（简要描述）:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#2e2e31"
+        android:layout_below="@+id/second_divider" />
+
+    <RelativeLayout
+        android:id="@+id/brief_description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/briefDescriptionLabel"
+        android:layout_marginTop="10dp"
+        android:background="#c0bfbf">
+        <EditText
+            android:id="@+id/brief_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/brief_description_layout"
+        android:text="提交"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"/>
+
+</RelativeLayout>

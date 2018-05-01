@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Title0" type="id"/>
+    <item name="Title1" type="id"/>
+    <item name="Title2" type="id"/>
+    <item name="Title3" type="id"/>
+    <item name="Title4" type="id"/>
+    <item name="Title5" type="id"/>
+    <item name="Title6" type="id"/>
+    <item name="Title7" type="id"/>
+    <item name="Title8" type="id"/>
+
+    <item name="Description0" type="id"/>
+    <item name="Description1" type="id"/>
+    <item name="Description2" type="id"/>
+    <item name="Description3" type="id"/>
+    <item name="Description4" type="id"/>
+    <item name="Description5" type="id"/>
+    <item name="Description6" type="id"/>
+    <item name="Description7" type="id"/>
+    <item name="Description8" type="id"/>
+
+    <item name="seekBar0" type="id"/>
+    <item name="seekBar1" type="id"/>
+    <item name="seekBar2" type="id"/>
+    <item name="seekBar3" type="id"/>
+    <item name="seekBar4" type="id"/>
+    <item name="seekBar5" type="id"/>
+    <item name="seekBar6" type="id"/>
+    <item name="seekBar7" type="id"/>
+    <item name="seekBar8" type="id"/>
+</resources>

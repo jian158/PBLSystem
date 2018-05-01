@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/activity_replies"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pblsystem.Activity.Replies"
+    android:padding="4dp"
+    android:fillViewport="true"
+    android:background="#ddd9d9">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="所有回复"
+        android:textColor="#5f6fae"
+        android:layout_below="@+id/post_layout"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tip"
+        android:layout_above="@+id/submit_comment_layout"
+        android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/replies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/post_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.example.pblsystem.Class.XCRoundImageView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"/>
+        <TextView
+            android:id="@+id/owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发帖人"
+            android:textColor="#283d9a"
+            android:layout_toRightOf="@+id/image"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textSize="16sp"
+            android:textColor="#242323"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/owner"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:layout_below="@+id/title"
+            android:textSize="16sp"
+            android:textColor="#242323"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:layout_toRightOf="@+id/image"
+            android:paddingLeft="5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/submit_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#fbfbfb">
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="写评论"/>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textSize="17sp"
+            android:layout_marginRight="6dp"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

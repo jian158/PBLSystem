@@ -1,0 +1,35 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="1dp"
+    android:background="#f1f1f1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/class_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/teacher"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/class_image"
+        android:paddingLeft="10dp"
+        android:text="教师名"
+        android:textSize="16sp"
+        android:textColor="#423f3f"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空"
+        android:textSize="14sp"
+        android:textColor="#423f3f"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"/>
+
+</RelativeLayout>

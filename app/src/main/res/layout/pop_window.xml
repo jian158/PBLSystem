@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/submit_work_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="提交成员分工"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"
+        android:paddingBottom="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#adadad"/>
+
+
+
+    <TextView
+        android:id="@+id/assign_speaker_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="指定演讲人"
+        android:textColor="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#adadad"/>
+
+    <TextView
+        android:id="@+id/summary_work_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="总结与反思"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"
+        android:paddingBottom="10dp"/>
+
+</LinearLayout>

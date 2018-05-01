@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/my_group_item"
+    android:layout_marginTop="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/class_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/problem"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/problem_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/class_image"
+        android:paddingLeft="10dp"
+        android:text="题目"
+        android:textSize="15sp"
+        android:textColor="#95bfe1"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小组"
+        android:layout_toRightOf="@+id/class_image"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/problem_title_tv"
+        android:textSize="14sp"
+        android:textColor="#78d56a"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/apply_time_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="演讲时间"
+        android:textColor="#8b7e7e"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

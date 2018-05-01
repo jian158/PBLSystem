@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ddd9d9"
+    tools:context="com.example.pblsystem.Activity.ShowAllProblems">
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评价详情"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dbd9d9"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="5dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_problems_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/divider">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

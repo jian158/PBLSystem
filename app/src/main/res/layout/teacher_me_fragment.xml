@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+     >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd9d9">
+        <LinearLayout
+            android:id="@+id/my_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/me"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp">
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"/>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:layout_below="@+id/username"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/open_group_mode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_class_blue_700_24dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/set_group_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="小组自由组合模式"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"/>
+
+            <Switch
+                android:id="@+id/switch_group_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sppech_history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_class_blue_700_24dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/my_class"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="课堂管理"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/switch_class_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/switch_class"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/switch_class"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="切换当前课堂"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_class_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/score"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/speech_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设置评分表"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/export_score_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="1dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/score"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/export_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="导出成绩"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_group_max_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="1dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_blue"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/set_group_max"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设置小组人数上限"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/clear_data_base_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="1dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/clear_database"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清理数据库"
+                android:textColor="#8e22ab"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/manager_data_base_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="1dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/manager"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/manager_database"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="管理课题库"
+                android:textColor="#8e22ab"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exit_system_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/exit"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="注销登陆"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

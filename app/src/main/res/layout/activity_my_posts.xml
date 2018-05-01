@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_posts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.pblsystem.Activity.MyPosts"
+    android:background="#ddd9d9">
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的帖子"
+        android:textSize="19sp"
+        android:textColor="#595757"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_posts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/head">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

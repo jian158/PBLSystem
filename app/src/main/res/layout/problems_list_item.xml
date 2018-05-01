@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/my_group_item"
+    android:layout_marginTop="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:src="@drawable/problem"
+        android:id="@+id/class_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/problem_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/class_image"
+        android:layout_toLeftOf="@+id/apply_time_info_tv"
+        android:paddingLeft="10dp"
+        android:text="题目"
+        android:textSize="15sp"
+        android:textColor="#e7dede"
+        android:gravity="center_vertical" />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_toRightOf="@+id/problem_title_tv"-->
+        <!--android:layout_marginRight="15dp">-->
+        <TextView
+            android:id="@+id/apply_extra_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空"
+            android:textSize="15sp"
+            android:textColor="#44e242"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:id="@+id/apply_time_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="演讲时间"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#8b7e7e"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="16dp"/>
+
+    <!--</RelativeLayout>-->
+</RelativeLayout>

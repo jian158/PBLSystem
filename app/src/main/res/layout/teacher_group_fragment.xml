@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd9d9"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pblsystem.Fragment.GroupFragmentForTeacher">
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所有小组"
+        android:textSize="18sp"
+        android:textColor="#343b98"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/apply_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/apply"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"/>
+
+    <View
+        android:id="@+id/first_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f3f3"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/first_divider">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/refresh"
+        android:scaleType="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        app:borderWidth="0dp"
+        android:backgroundTint="#d6b1d9"
+        app:elevation="4dp"
+        app:pressedTranslationZ="16dp"/>
+</RelativeLayout>
